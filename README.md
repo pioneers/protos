@@ -16,10 +16,9 @@ When first using submodule, run the following commands on the branch with the su
 
 When cloning the entire repo for the first time, you can do the same thing. 
 
-<br>
+When this `protos` repo (which is a submodule in other repos) is updated, then all people in projects that include this submodule must run `git submodule update --remote` from the root directory of the project repo in order to obtain the latest changes. (Technically you just need to not run it in the submodule directory).
 
-When this `protos` repo (which is a submodule in other repos) is updated, then all people in projects that include this submodule must run `git submodule update --remote` in order to obtain the latest changes.
-
+Finally, you should only modify the files in this submodule by directly pushing to this repo. (i.e. do not modify the files from projects that include this submodule).
 
 ## Setting up
 
