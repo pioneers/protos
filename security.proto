@@ -1,0 +1,19 @@
+/*
+ * Defines a message for security communications with runtime
+ */
+
+syntax = "proto3";
+
+option optimize_for = LITE_RUNTIME;
+
+enum Type {
+    Request = 0;
+    EncryptKey = 1;
+    LoginInfo = 2;
+}
+
+message SecurityMessage {
+    Type type = 0;
+    repeated string key = 1;
+    repeated string signedEncryptedPassword = 2;
+}
