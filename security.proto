@@ -13,7 +13,7 @@ enum Type {
 }
 
 message SecurityMessage {
-    Type type = 0;
-    repeated string key = 1;
-    repeated string signedEncryptedPassword = 2;
+    Type type = 1;
+    repeated string key = 2;
+    repeated string signedEncryptedPassword = 3;
 }
