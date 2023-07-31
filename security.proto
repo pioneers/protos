@@ -16,4 +16,5 @@ message SecurityMessage {
     repeated string publicKey = 2;
     repeated string signature = 3;
     repeated string encryptedPassword = 4;
+    repeated string signaturePublicKey = 5;
 }
