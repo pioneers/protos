@@ -10,7 +10,6 @@ enum Mode {
     IDLE = 0;
     AUTO = 1;
     TELEOP = 2;
-    ESTOP = 3;
 }
 
 message RunMode {
